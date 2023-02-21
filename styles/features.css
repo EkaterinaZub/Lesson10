@@ -7,10 +7,6 @@
     margin: 30px auto;
 }
 
-/*.features__content {
-    width: 1073px;
-    height: 415px;
-}*/
 
 .features__men {
     display: flex;
@@ -72,7 +68,6 @@
     15% {transform: translateY(-50%);}
     30% {transform: translateY(-100px);}
     40% {transform: rotate(180deg);    }
-    /* 50% {transform: rotateY(360deg);    } */
     60% {transform: rotateY(180deg);}
     70% {transform: translateY(-100px);}
     80% {transform: translateY(-50px);}
