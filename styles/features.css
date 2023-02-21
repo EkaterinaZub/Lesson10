@@ -1,0 +1,141 @@
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+}
+
+/*.features__content {
+    width: 1073px;
+    height: 415px;
+}*/
+
+.features__men {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    height: 415px;
+
+}
+
+.men__img {
+    width: 141px;
+    height: 150px;
+    transition: 2s;
+}
+
+.men__img:hover{
+    transform:  scale(1.2);
+}
+
+
+.features__text {
+    font-size: 24px;
+    color: #2B292D;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    width: 293px;
+    height: 90px;
+}
+
+.features__telefone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 415px;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.telephone__img {
+    width: 148px;
+    height: 149px;
+    animation-name: telephone;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes telephone {
+    0% {transform: translateY(0);}
+    15% {transform: translateY(-50%);}
+    30% {transform: translateY(-100px);}
+    40% {transform: rotate(180deg);    }
+    /* 50% {transform: rotateY(360deg);    } */
+    60% {transform: rotateY(180deg);}
+    70% {transform: translateY(-100px);}
+    80% {transform: translateY(-50px);}
+    100% {transform: translate(0);}
+}
+
+.features__women {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    height: 415px;
+    
+
+}
+
+
+
+
+.women__img {
+    width: 124px;
+    height: 150px;
+    animation-name: women;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes women {
+    0% { transform: translate(0);}
+    25% {transform: translate(100px);}
+    50% {transform: translate(170px);}
+    100% {transform: translate(20px);    }
+    
+}
+
+.features__button {
+    margin-top: 33px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3041C4;
+
+}
+
+@media (max-width: 870px) {
+    .features {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:350px) {
+    .features__men {
+        width: 100%;
+
+    }
+    .features__telefone {
+        width: 100%;
+    }
+
+    .features__women {
+        width: 100%;
+    }
+}

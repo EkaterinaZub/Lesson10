@@ -1,0 +1,35 @@
+@import url(../styles/header.css);
+@import url(../styles/intro.css);
+@import url(../styles/features.css);
+@import url(../styles/audience.css);
+@import url(../styles/functions.css);
+@import url(../styles/sending.css);
+@import url(../styles/footer.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+   
+}
+.container__headerSection {
+    background-color: #F9D9EB;
+    background-size: 100%;
+    height: 100%;
+}

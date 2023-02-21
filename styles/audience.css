@@ -1,0 +1,167 @@
+
+
+
+
+ .audience{
+    background-color:     #e6f4f7;
+    display: grid;
+    
+ }
+
+ .audience__content{
+     display: grid;
+     grid-template-areas: 'Visitors'
+     'header'
+     'text'
+     ;
+ }
+ .audience__visitors {
+    grid-area: Visitors ;
+    margin-top: 108px;
+    height: 34px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .audience__header {
+    grid-area: header ;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    width: 555px;
+    
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    justify-self: center;
+    text-align: center;
+ }
+
+ .audience__text {
+    grid-area: text;
+    margin-bottom: 141px;
+    justify-self: center;
+    text-align: center;
+    width: 555px;
+   
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+ }
+
+ .audience__categories{
+    display: grid;
+    grid-template-areas: 'face tv athletes lightBulb';
+margin-bottom: 162px;
+
+ }
+
+ .categories__contentface{
+    grid-area:  face;
+ }
+
+ .categories__contenttv {
+    grid-area: tv;
+ }
+
+ .categories__contentathletes {
+    grid-area: athletes ;
+ }
+
+ .categories__contentlightBulb {
+    grid-area: lightBulb ;
+ }
+
+
+ .categories__contentface, .categories__contenttv, .categories__contentathletes, .categories__contentlightBulb {
+    display: grid;
+    grid-template-areas: 'face '
+    'text';
+    width: 262px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    justify-self: center;
+    align-items: center;
+ }
+
+ .categories__face, .categories__tv, .categories__athletes, .categories__lightBulb{
+    grid-area: face;
+    justify-self: center;
+ }
+
+ .categories__text {
+    grid-area: text;
+    justify-self: center;
+ }
+
+
+
+
+
+
+
+
+.categories__content--backgraund {
+    background-color:     #3141C5;
+   
+}
+
+
+
+
+
+.categories__text {
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+
+@media (max-width:1090px) {
+    .audience__visitors {
+        
+        margin-top: 80px;
+     }
+    .audience__text {
+        
+        margin-bottom: 80px;
+     }
+    
+    
+    .audience__categories{
+       margin-bottom: 80px;
+        grid-template-areas: 'face' 
+        'tv' 
+        'athletes' 
+        'lightBulb'
+            }
+     .categories__contentface, .categories__contenttv, .categories__contentathletes, .categories__contentlightBulb{
+        margin-bottom: 20px;
+     }
+    
+
+    
+}
+
+ @media (max-width:580px) {
+    .audience__visitors {
+        
+        margin-top: 40px;
+     }
+
+    .audience__header, .audience__text {
+width: 100%;
+    }
+    .audience__header {
+        font-size: 50px;
+}
+
+.audience__text {
+    margin-bottom: 40px;
+}
+.audience__categories{
+    margin-bottom: 40px;}
+}
+ 
+
+
